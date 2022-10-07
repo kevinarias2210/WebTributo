@@ -1,0 +1,124 @@
+.section2{
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(228deg, $Color-principal, $color-secundario);
+    .section2__contenedor{
+        margin-bottom: 80px;
+        .section2__contenedor--foro{
+            h1{
+                font-family: $fuente-titulo;
+                font-size: 35px;
+                text-align: center;
+                color: $color-texto-claro;
+            }
+        }
+        .section2__contenedor--items{
+            display: grid;
+            grid-template-columns: 500px 500px;
+            column-gap: 50px;
+            margin-top: 80px;
+            .section2__contenedor--cajaImg{
+                display: flex;
+                justify-content: flex-end;
+                .contenedor--imgH{
+                    width: 300px;
+                    height: 350px;
+                    object-fit: cover;
+                    border-radius: 17%;
+                    box-shadow: 7px 5px 10px 0 $color-quinto;
+                }
+            }
+            .section2__contenedor--mini{
+                .section2__contenedor--imgF{
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    .imgF--mine{
+                        display: flex;
+                        align-items: center;
+                        .contenedor--imgP{
+                            width: 30%;
+                            border-radius: 50%;
+                        }
+                        h2{
+                            margin-left: 15px;
+                            font-family: $fuente-titulo;
+                            color: $color-texto-claro;
+                        }
+                    }
+                    .imgF--mine2{
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        .contenedor--imgS{
+                            width: 60%;
+                        }
+                    }
+                }
+                .section2__contenedor--input{
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-top: 100px;
+                    input{
+                        width: 50%;
+                        padding: 10px;
+                        border-radius: 20px;
+                        border: 1px solid white;
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .section2__contenedor--foro2{
+            margin-top: 80px;
+            .section__contenedor--items2{
+                display: flex;
+                align-items: center;
+                .contenedor--imgP2{
+                    width: 7%;
+                    height: 75px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                h2{
+                    margin-left: 15px;
+                    font-family: $fuente-titulo;
+                    color: $color-texto-claro;
+                }
+            }
+            .section__contenedor--coment{
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+                input{
+                    width: 80%;
+                    padding: 20px;
+                }
+                ::placeholder{
+                    text-align: center;
+                    color: $color-texto-oscuro;
+                }
+            }
+        }
+        .section2__contenedor--foro3{
+            @extend .section2__contenedor--foro2;
+            .section__contenedor--items3{
+                @extend .section__contenedor--items2;
+                .contenedor--imgP3{
+                    @extend .contenedor--imgP2;
+                }
+            }
+            .section__contenedor--coment{
+                margin: 0 8%;
+                p{
+                    font-family: $fuente-texto;
+                    color: $color-texto-claro;
+                }
+            }
+        }
+    }
+}

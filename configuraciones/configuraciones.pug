@@ -1,0 +1,14 @@
+mixin header(enlace, imagen, alt, enlace1, videojuegos, enlace2, libros, enlace3, foro, enlace4, registrarse)
+    .header__contenedor--img
+        a(href=""+enlace) 
+            img(src="assets/imagenes/"+imagen, alt=""+alt)
+    .header__contenedor--menu 
+        ul 
+            li 
+                a(href=""+enlace1)=videojuegos
+            li 
+                a(href=""+enlace2)=libros
+            li 
+                a(href=""+enlace3)=foro
+            li 
+                a(href=""+enlace4)=registrarse

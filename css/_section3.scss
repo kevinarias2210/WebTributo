@@ -1,0 +1,67 @@
+.section3{
+    height: 88vh;
+    justify-content: center;
+    @extend .aside;
+    .section3__contenedor{
+        width: 300px;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 40px;
+        border-radius: 30px;
+        background-color: $color-quinto;
+        h1{
+            margin-bottom: 40px;
+            font-family: $fuente-titulo;
+            font-size: 35px;
+            text-align: center;
+            color: $color-texto-claro;
+        }
+        .section3__contenedor--items{
+            .contenedor--items--n{
+                p{
+                    margin-bottom: 10px;
+                    font-family: $fuente-texto;
+                    font-size: 15px;
+                    color: $color-texto-claro;
+                }
+                input{
+                    width: 100%;
+                    margin-bottom: 10px;
+                    padding: 7px;
+                    border-radius: 20px;
+                    border: 1px solid white;
+                    outline: none;
+                }
+            }
+        }
+        .section3__contenedor--items2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .contenedor--items--b{
+                button{
+                    margin-bottom: 10px;
+                    padding: 7px 20px;
+                    border: 1px solid $color-secundario;
+                    border-radius: 10px;
+                    outline: none;
+                    color: $color-texto-claro;
+                    background-color: $color-secundario;
+                }
+            }
+            .contenedor--items--a{
+                a{
+                    margin: 0 5px;
+                    font-family: $fuente-texto;
+                    font-size: 12px;
+                    color: $color-texto-claro;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

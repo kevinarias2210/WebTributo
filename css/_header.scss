@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    padding: 20px;
+    background-color: $Color-principal;
+    border-bottom: 5px solid $color-cuarto;
+    &__contenedor{
+        display: flex;
+        .header__contenedor--img{
+            img{
+                width: 20%;
+                margin: 15px 0 0 35px;
+            }
+        }
+        .header__contenedor--menu{
+            ul{
+                margin: 15px 35px 0 0;
+                display: flex;
+                align-items: center;
+                li{
+                    a{
+                        margin-right: 35px;
+                        color: white;
+                        font-size: 20px;
+                        font-family: $fuente-titulo;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+.section{
+    height: 200vh;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(228deg, $Color-principal, $color-secundario);
+    @extend .main;
+    &__contenedor{
+        flex-direction: column;
+        margin-bottom: 50px;
+        @extend .main__contenedor;
+        .section__contenedor--title{
+            margin-bottom: 80px;
+            h1{
+                font-family: $fuente-titulo;
+                font-size: 35px;
+                text-align: center;
+                color: $color-texto-claro;
+            }
+        }
+        .section__contenedor--mini{
+            display: grid;
+            grid-template-columns: 1fr 500px;
+            .section__contenedor--img{
+                @extend .section__contenedor;
+                .contenedor--img{
+                    width: 70%;
+                    border-radius: 55px;
+                    box-shadow: 10px 10px 15px 0px $color-quinto;
+                }
+            }
+            .section__contenedor--input{
+                @extend .section__contenedor;
+                input{
+                    width: 50%;
+                    padding: 7px;
+                    border-radius: 20px;
+                    border: 1px solid white;
+                    outline: none;
+                }
+                a{
+                    margin-top: 20px;
+                    font-family: $fuente-texto;
+                    color: $color-texto-claro;
+                    text-decoration: none;
+                }
+            }
+        }
+        .section__contenedor--p{
+            display: grid;
+            grid-template-columns: 1400px;
+            margin-top: 50px;
+            p{
+                font-family: $fuente-texto;
+                font-size: 20px;
+                color: $color-texto-claro;
+            }
+        }
+    }
+    &__contenedor2{
+        @extend .section__contenedor;
+        .section__contenedor--title2{
+            @extend .section__contenedor--title;
+        }
+        .section__contenedor--mini2{
+            @extend .section__contenedor--mini;
+            .section__contenedor--img2{
+                @extend .section__contenedor--img;
+                .contenedor--img2{
+                    width: 52%;
+                    @extend .contenedor--img;
+                }
+            }
+        }
+    }
+}
